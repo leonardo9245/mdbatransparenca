@@ -5,7 +5,7 @@
   --primary-color: #19dcfe;
   --hover-color: #1ccdec;
   --secondary-color: aqua;
-  --text-color-white: #fff;
+  --text-color-white: #efeeee;
   --text-color-black: #000;
   --box-shadow-default: 0px 0px 5px 5px rgba(0, 0, 0, 0.48);
   --border-radius-default: 10px;
@@ -128,6 +128,32 @@ h2 {
   justify-content: center;
   height: 100vh;
   overflow-y: hidden;
+}
+
+.menu-sections button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  color: var(--text-color-white);
+  background-color: var(--primary-color);
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
+  border-radius: var(--border-radius-default);
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.contacts button:hover,
+.menu-sections button:hover {
+  background-color: var(--hover-color);
+}
+
+.contacts button img,
+.menu-sections button img {
+  width: 30px;
+  height: 30px;
 }
 
 /* Estilo da seção principal */
@@ -293,15 +319,6 @@ h2 {
   font-weight: 900;
 }
 
-.contacts button:hover {
-  background-color: var(--hover-color);
-}
-
-.contacts button img {
-  width: 30px;
-  height: 30px;
-}
-
 .contacts-images-container {
   width: 350px;
   position: relative;
@@ -392,6 +409,10 @@ h2 {
   align-items: center;
   justify-content: flex-start;
   gap: 5px;
+}
+
+.footer a {
+  color: #000;
 }
 
 /* Breakpoints - Mobile First */
